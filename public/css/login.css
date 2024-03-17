@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --f:#bea5aa;
+    --s:#564145;
+    --t:#ffbecb;
+}
+
+body{
+    color:white;
+    background-color: var(--s);
+}
+
+.login{
+    width: 40%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px ;
+}
+
+.login form button{
+    width: 100%;
+    cursor: pointer;
+    color: white;
+    border: 3px solid white;
+    border-radius: 20px;
+    background-color: var(--t);
+}
+
+.login form button,
+.login form input {
+    padding: 5px;
+}
+

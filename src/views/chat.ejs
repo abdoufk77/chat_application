@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat</title>
+    <link rel="stylesheet" href="css/chat.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="js/client.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="usersHeader">
+        <h2><i class="fa-solid fa-users"></i> Users Connected</h2>
+      </div>
+
+      <div class="profileHeader">
+        <ul>
+          <li id="Username"><i class="fa-solid fa-user"></i> </li>
+          <li><i class="fa-solid fa-gear"></i></li>
+        </ul>
+      </div>
+
+      <div class="users">
+        <div class="user">
+          <h4 class="icon">A</h4>
+          <h3>Abdou</h3>
+        </div>
+      </div>
+
+      <div class="chat">
+        <ul id="Chatmessages">
+          <li>message form oder</li>
+          <li class="fromMe">message form message from me</li>
+        </ul>
+
+        <form>
+            <input type="text" placeholder="message..." autocomplete="off" id="message">
+            <button>Send</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
